@@ -19,7 +19,7 @@ function Home({}: Props) {
         Outfits categories
       </h1>
       <p className="mb-16 text-center text-slate-800">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Here are some styles for you
       </p>
       {query.data ? <CategoriesList categories={query.data} /> : null}
     </Layout>

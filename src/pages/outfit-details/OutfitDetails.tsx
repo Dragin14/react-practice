@@ -39,7 +39,12 @@ function OutfitDetails({}: Props) {
         {outfitQuery.data?.name}
       </h1>
       <div className="flex flex-col sm:flex-row items-center w-full justify-center">
-        <img src={outfitQuery.data?.photo} />
+        <div className="w-full max-w-[400px] pr-10">
+          <img
+            src={outfitQuery.data?.photo}
+            className="w-full h-full object-cover"
+          />
+        </div>
         {outfitQuery.data ? <ThingsList things={filteredThings} /> : null}
       </div>
     </Layout>

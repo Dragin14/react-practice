@@ -26,9 +26,9 @@ function ThingsList({ things }: Props) {
         {things.map((thing) => (
           <li
             key={thing.id}
-            className="relative w-1/2 bg-slate-900 flex-grow-0 flex-shrink-0 basis-72 inline-block snap-center"
+            className="relative w-1/2 h-auto aspect-[5/7] flex-grow-0 flex-shrink-0 basis-72 inline-block snap-center"
           >
-            <img src={thing.photo} className="w-full h-full object-cover" />
+            <img src={thing.photo} className="w-full h-full object-contain" />
           </li>
         ))}
       </ul>
