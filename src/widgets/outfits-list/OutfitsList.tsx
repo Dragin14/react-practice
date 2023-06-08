@@ -14,7 +14,7 @@ type Props = { outfits: Outfit[] };
 function OutfitsList({ outfits }: Props) {
   return (
     <div>
-      <ul className="flex items-center gap-16 flex-wrap justify-center">
+      <ul className="flex items-center gap-16 flex-wrap justify-center mx-3">
         {outfits.map((outfit) => (
           <li
             key={outfit.id}
